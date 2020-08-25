@@ -33,6 +33,15 @@ See the Documentation items for more details.
 
 [Params Example](functions.immdom.com/js/param) <-- try more params with /js/param?basicThing=<insertMe>
 
+[Use Files at Runtime Example](functions.immdom.com/js/files)
+
+**Python**
+[Basic Example](functions.immdom.com/python/basic)
+
+[Params Example](functions.immdom.com/python/param) <-- this is different. it just prints a dict of params.
+
+[Flask Example](https://functions.immdom.com/api?domain=google.com) <-- dns lookup on a domain.
+
 # Caveats
 
 These examples represent my (@paulkarayan) limited exploration of Vercel functions.
