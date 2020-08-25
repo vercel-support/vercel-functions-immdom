@@ -1,11 +1,4 @@
 {
   "env": {},
-  "functions": {
-    "api/js/files.js": {
-      "includeFiles": "_files/**"
-    },
-    "api/python/files.py": {
-      "includeFiles": "_files/**"
-    }
-  }
+  "functions": {}
 }
