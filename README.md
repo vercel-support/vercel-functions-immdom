@@ -1,12 +1,13 @@
 # Working Examples with Vercel Functions
 
 Check the examples out at:
-[functions.immdom.com]
+[functions.immdom.com](functions.immdom.com)
 
-Get started on your own by doing the following:
+to run the dainty webapp that will point you to the examples:
 
-to run the dainty webapp:
 `yarn dev`
+
+you can also fork this repo and set it up with Vercel.
 
 _REMEMBER: These functions ain't gonna work unless you push 'em up to Vercel!_
 
@@ -22,21 +23,17 @@ endpoint at the file name's path. Nesting is allowed, as you can see with these 
 /api/js/basic -> https://<APP_URL>/api/js/basic
 ```
 
-See INSERT ME for more details.
+See the Documentation items for more details.
 
-### Using Files
+### List the Examples
 
-### Using Params
+**Javascript**
 
-## Working with Python
+[Basic Example](functions.immdom.com/js/basic)
 
-### BaseHTTPRequestHandler
+[Params Example](functions.immdom.com/js/param) <-- try more params with /js/param?basicThing=<insertMe>
 
-### Flask
-
-## Getting Beyond This
-
-### Caveats
+# Caveats
 
 These examples represent my (@paulkarayan) limited exploration of Vercel functions.
 Please let me know what I might be missing or doing wrong.
@@ -56,31 +53,12 @@ setup with Flask or other tech. Bonus: you'll not have to worry about lack of ob
 Also - Node.js is clearly the preferred choice here. I don't mind it but take a look at the
 inability to use files with the Python example.
 
-### What Doesn't Make Sense / Work
+## What Doesn't Make Sense / Work
 
-- I can't seem to get files to work with Python. see [link to my file]
+- I can't seem to get files to work with Python.
 
-link to any follow up discussions.
-
-best info i found:
-https://github.com/vercel/vercel/discussions/4904
+Vercel Discussion post [here](https://github.com/vercel/vercel/discussions/5083)
 
 - can flask apps have multiple routes or entry points?
 
-link to any follow up discussions.
-
-i thought dns.py (show example) would go to /dns
-
-From:
-https://vercel.com/docs/runtimes#advanced-usage/advanced-python-usage
-from flask import Flask, Response
-app = Flask(**name**)
-
-@app.route('/', defaults={'path': ''})
-@app.route('/<path:path>')
-def catch_all(path):
-return Response("<h1>Flask</h1><p>You visited: /%s</p>" % (path), mimetype="text/html")
-
-also see: https://github.com/vercel/now-examples/issues/163
-doesnt work like:
-https://camillovisini.com/barebone-serverless-flask-rest-api-on-zeit-now/
+Vercel Discussion post [here](https://github.com/vercel/vercel/discussions/5084)
