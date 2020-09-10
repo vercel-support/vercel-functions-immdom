@@ -6,7 +6,7 @@ const fileOne = readFileSync(
 ).toString();
 
 const fileTwo = readFileSync(
-  join(__dirname, "_files", "ci.txt"),
+  join(__dirname, "_files", "file2.txt"),
   "utf8"
 ).toString();
 
