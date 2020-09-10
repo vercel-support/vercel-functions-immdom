@@ -14,6 +14,6 @@ module.exports = (req, res) => {
   res
     .status(200)
     .send(
-      `Hello! I'm going to show you what's in my _files! \n ${fileOne} \n ${fileOne}`
+      `Hello! I'm going to show you what's in my _files! \n ${fileOne} \n ${fileTwo}`
     );
 };
