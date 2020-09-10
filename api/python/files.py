@@ -12,12 +12,9 @@ class handler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/plain')
         self.end_headers()
         print(os.getcwd())
-        from os import listdir
-        from os.path import isfile, join
-        onlyfiles = [f for f in listdir(
-            os.getcwd()) if isfile(join(os.getcwd(), f))]
-        print(onlyfiles)
-        with open('./_files/file.txt', 'r') as fptr:
+        from os import path
+        d = path.dirname(path.abspath(__file__))
+        with open(path.join(d, '_files', 'file.txt'), 'r') as fptr:
             data = fptr.read()
         message = cow.Cowacter().milk(
             'Hello, here is the file contents: {data}'.format(data=data))
